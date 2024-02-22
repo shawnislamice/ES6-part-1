@@ -1,0 +1,56 @@
+ES6(Ecma Script) Version 6 
+
+function add(num1=0,num2=2){
+    return num1+num2;
+}
+const result=add(5,5) //10
+const result=add() //2
+console.log(result)
+
+
+Function ehh jodi parameter ehh default er man tah provide nah kori tahola seh defalut value tah input hisebe nibe.
+
+const number = [2, 56, 8, 6, 7, 8, 5, 4, 78];
+const arrayMax = Math.max(...number); //Spread
+console.log(number);
+console.log(...number);
+console.log(arrayMax);
+
+
+Array er age jodi ... thake tar mane seh tokhon array er bhitore number ghula keh shudu dibe. tokhon seh ar ager reference dhore rakhbe nah fole spreading issue tah solve hoye jhabe. 
+const numbers = [
+  1, 2, 3, 4, 5, 6, 8, 12, 5, 4, 5, 45, 4, 5, 4, 5, 1, 4, 5, 1, 4,
+];
+for (let i = 0; i < numbers.length; i++) {
+  // console.log(numbers[i])
+}
+
+for (let number of numbers) {
+  // console.log(number)
+}
+
+const myName = "Shawon Islam";
+for (let char of myName) {
+  // console.log(char)
+}
+// console.log(myName)
+
+const glass = {
+  name: "Glass",
+  price: 100,
+  color: "Red",
+};
+for (let x in glass) {
+  const value = glass[x];
+  console.log(x, value);
+}
+//Optional
+const keys = Object.keys(glass);
+console.log(keys);
+for(let key of keys){
+    const value=glass[key]
+    console.log(key,value)
+}
+
+
+Object keh for loop diye access korar khetre dot notation kaj korbe nah karon directly accessible nah property name hole dot dewa jhay kintu variable hole bracket ehh dewa lagbe. 
